@@ -1,0 +1,47 @@
+/*_hs_*/;var sas = sas || {};
+if(sas && sas.events && sas.events.fire && typeof sas.events.fire === "function" )
+        sas.events.fire("ad", { tagId: "sas_119834", formatId: 119834 }, "sas_119834");;/*_hs_*/(()=>{"use strict";var t={4084:(t,e)=>{Object.defineProperty(e,"__esModule",{value:!0}),e.LoadManager=void 0;class s{constructor(){this.scripts=new Map,this.callbacks=[]}static getUrls(t){const e=window.sas,s="string"==typeof t?[t]:t,a=e.utils.cdns[location.protocol]||e.utils.cdns["https:"]||"https://ced-ns.sascdn.com";return s.map((t=>a.replace(/\/+$/,"")+"/"+t.replace(/^\/+/,"")))}static loadLink(t){const e=document.createElement("link");e.rel="stylesheet",e.href=t,document.head.appendChild(e)}static loadLinkCdn(t){s.getUrls(t).forEach(s.loadLink)}loadScriptCdn(t,e){const a=s.getUrls(t);for(const t of a){let e=this.scripts.get(t);e||(e={url:t,loaded:!1},this.scripts.set(t,e),this.loadScript(e))}(null==e?void 0:e.onLoad)&&(this.callbacks.push({called:!1,dependencies:a,function:e.onLoad}),this.executeCallbacks())}onScriptLoad(t){t.loaded=!0,this.executeCallbacks()}loadScript(t){const e=document.currentScript,s=document.createElement("script");s.onload=()=>this.onScriptLoad(t),s.src=t.url,e?(e.insertAdjacentElement("afterend",s),window.sas.currentScript=e):document.head.appendChild(s)}executeCallbacks(){this.callbacks.forEach((t=>{!t.called&&t.dependencies.every((t=>{var e;return null===(e=this.scripts.get(t))||void 0===e?void 0:e.loaded}))&&(t.called=!0,t.function())})),this.callbacks=this.callbacks.filter((t=>!t.called))}}e.LoadManager=s}},e={};function s(a){var c=e[a];if(void 0!==c)return c.exports;var l=e[a]={exports:{}};return t[a](l,l.exports,s),l.exports}(()=>{const t=s(4084);window.sas=window.sas||{};const e=window.sas;e.utils=e.utils||{},e.utils.cdns=e.utils.cdns||{},e.utils._callbacks=e.utils._callbacks||{},e.events=e.events||{};const a=e.utils.loadManager||new t.LoadManager;e.utils.loadManager=a,e.utils.loadScriptCdn=a.loadScriptCdn.bind(a),e.utils.loadLinkCdn=t.LoadManager.loadLinkCdn})()})();
+
+(function(sas) {
+	var config = {
+		insertionId: Number(12761439),
+		pageId: '1746562',
+		pgDomain: 'https%3a%2f%2fwww.ena.org',
+		sessionId: new Date().getTime(),
+		baseActionUrl: 'https://use2.smartadserver.com/track/action?siteid=577096&fmtid=119834&pid=1746562&iid=12761439&sid=7004449245&scriptid=99340&opid=23161874-e8e7-4a9b-bcec-246213507564&opdt=1753300320099&bldv=9474&srcfn=diff&reqid=07e942cc-dfca-4881-ab91-517555534dc7&reqdt=1753305404198&oppid=1',
+		formatId: Number(119834),
+		tagId: 'sas_119834',
+		oba: Number(0),
+		isAsync: window.sas_ajax || true,
+		customScript: String(''),
+		filePath: (document.location.protocol == 'https:' ? 'https://ced-ns.sascdn.com' : 'http://ced-ns.sascdn.com') + '/diff/templates/',
+		creativeFeedback: Boolean(1),
+		dsa: String(''),
+		creative: {
+			id: Number(40657817),
+			url: 'https://creatives.sascdn.com/diff/1541/advertiser/532788/June_1600x150_200908a7-785c-4dd3-a883-d846dcea4ace.png',
+			type: Number(1),
+			width: Number(('1600' === '100%') ? 0 : '1600'),
+			height: Number(('150' === '100%') ? 0 : '150'),
+			clickUrl: 'https://use2.smartadserver.com/click?imgid=40657817&insid=12761439&pgid=1746562&fmtid=119834&ckid=6367838356270704617&uii=352858983950408360&acd=1753305404195&tmstp=7004449245&tgt=%24dt%3d1t%3b%24dma%3d803%3b%24dt%3d1t%3b%24dma%3d803%3b%24hc&systgt=%24qc%3d1500084761%3b%24ql%3dUnknown%3b%24qpc%3d90013*%3b%24qpc%3d90*%3b%24qpc%3d900*%3b%24qpc%3d9001*%3b%24qpc%3d90013*%3b%24qpc%3d90013**%3b%24qt%3d152_2199_14041t%3b%24dma%3d803%3b%24qo%3d6%3b%24b%3d17999%3b%24o%3d11100%3b%24sw%3d1920%3b%24sh%3d1080&envtype=0&imptype=0&gdpr=0&pgDomain=https%3a%2f%2fwww.ena.org%2fevents&cappid=6367838356270704617&scriptid=99340&opid=23161874-e8e7-4a9b-bcec-246213507564&opdt=1753300320099&bldv=9474&srcfn=diff&reqid=07e942cc-dfca-4881-ab91-517555534dc7&reqdt=1753305404198&oppid=1&eqs=2e33ac8afa3b5e5f2240c49ea32505bf9d60b60a&go=https%3a%2f%2fkedrab.com%2fwp-content%2fuploads%2f2025%2f03%2fKEDRAB_Rabies_and_Children_Prevalence_and_Challenges_of_HRIG_Administration.pdf',
+			clickUrlArray: ["https://use2.smartadserver.com/click?imgid=40657817&insid=12761439&pgid=1746562&fmtid=119834&ckid=6367838356270704617&uii=352858983950408360&acd=1753305404195&tmstp=7004449245&tgt=%24dt%3d1t%3b%24dma%3d803%3b%24dt%3d1t%3b%24dma%3d803%3b%24hc&systgt=%24qc%3d1500084761%3b%24ql%3dUnknown%3b%24qpc%3d90013*%3b%24qpc%3d90*%3b%24qpc%3d900*%3b%24qpc%3d9001*%3b%24qpc%3d90013*%3b%24qpc%3d90013**%3b%24qt%3d152_2199_14041t%3b%24dma%3d803%3b%24qo%3d6%3b%24b%3d17999%3b%24o%3d11100%3b%24sw%3d1920%3b%24sh%3d1080&envtype=0&imptype=0&gdpr=0&pgDomain=https%3a%2f%2fwww.ena.org%2fevents&cappid=6367838356270704617&scriptid=99340&opid=23161874-e8e7-4a9b-bcec-246213507564&opdt=1753300320099&bldv=9474&srcfn=diff&reqid=07e942cc-dfca-4881-ab91-517555534dc7&reqdt=1753305404198&oppid=1&eqs=2e33ac8afa3b5e5f2240c49ea32505bf9d60b60a&go=https%3a%2f%2fkedrab.com%2fwp-content%2fuploads%2f2025%2f03%2fKEDRAB_Rabies_and_Children_Prevalence_and_Challenges_of_HRIG_Administration.pdf"],
+			oryginalClickUrl: 'https://kedrab.com/wp-content/uploads/2025/03/KEDRAB_Rabies_and_Children_Prevalence_and_Challenges_of_HRIG_Administration.pdf',
+			clickTarget: !0 ? '_blank' : '',
+			agencyCode: String(''),
+			creativeCountPixelUrl: 'https://use2.smartadserver.com/h/aip?uii=352858983950408360&tmstp=7004449245&ckid=6367838356270704617&systgt=%24qc%3d1500084761%3b%24ql%3dUnknown%3b%24qpc%3d90013*%3b%24qpc%3d90*%3b%24qpc%3d900*%3b%24qpc%3d9001*%3b%24qpc%3d90013*%3b%24qpc%3d90013**%3b%24qt%3d152_2199_14041t%3b%24dma%3d803%3b%24qo%3d6%3b%24b%3d17999%3b%24o%3d11100%3b%24sw%3d1920%3b%24sh%3d1080&acd=1753305404195&envtype=0&siteid=577096&tgt=%24dt%3d1t%3b%24dma%3d803%3b%24dt%3d1t%3b%24dma%3d803%3b%24hc&gdpr=0&opid=23161874-e8e7-4a9b-bcec-246213507564&opdt=1753300320099&bldv=9474&srcfn=diff&reqid=07e942cc-dfca-4881-ab91-517555534dc7&reqdt=1753305404198&oppid=1&visit=S&statid=2&imptype=0&intgtype=0&pgDomain=https%3a%2f%2fwww.ena.org%2fevents&cappid=6367838356270704617&capp=0&mcrdbt=0&insid=12761439&imgid=40657817&pgid=1746562&fmtid=119834&isLazy=0&scriptid=99340',
+			creativeClickCountPixelUrl: 40657817 ? 'https://use2.smartadserver.com/h/cp?imgid=40657817&insid=12761439&pgid=1746562&fmtid=119834&ckid=6367838356270704617&uii=352858983950408360&acd=1753305404195&tmstp=7004449245&tgt=%24dt%3d1t%3b%24dma%3d803%3b%24dt%3d1t%3b%24dma%3d803%3b%24hc&systgt=%24qc%3d1500084761%3b%24ql%3dUnknown%3b%24qpc%3d90013*%3b%24qpc%3d90*%3b%24qpc%3d900*%3b%24qpc%3d9001*%3b%24qpc%3d90013*%3b%24qpc%3d90013**%3b%24qt%3d152_2199_14041t%3b%24dma%3d803%3b%24qo%3d6%3b%24b%3d17999%3b%24o%3d11100%3b%24sw%3d1920%3b%24sh%3d1080&envtype=0&imptype=0&gdpr=0&pgDomain=https%3a%2f%2fwww.ena.org%2fevents&cappid=6367838356270704617&scriptid=99340&opid=23161874-e8e7-4a9b-bcec-246213507564&opdt=1753300320099&bldv=9474&srcfn=diff&reqid=07e942cc-dfca-4881-ab91-517555534dc7&reqdt=1753305404198&oppid=1&eqs=2e33ac8afa3b5e5f2240c49ea32505bf9d60b60a' : 'https://use2.smartadserver.com/h/micp?imgid=0&insid=12761439&pgid=1746562&fmtid=119834&ckid=6367838356270704617&uii=352858983950408360&acd=1753305404195&tmstp=7004449245&tgt=%24dt%3d1t%3b%24dma%3d803%3b%24dt%3d1t%3b%24dma%3d803%3b%24hc&systgt=%24qc%3d1500084761%3b%24ql%3dUnknown%3b%24qpc%3d90013*%3b%24qpc%3d90*%3b%24qpc%3d900*%3b%24qpc%3d9001*%3b%24qpc%3d90013*%3b%24qpc%3d90013**%3b%24qt%3d152_2199_14041t%3b%24dma%3d803%3b%24qo%3d6%3b%24b%3d17999%3b%24o%3d11100%3b%24sw%3d1920%3b%24sh%3d1080&envtype=0&imptype=0&gdpr=0&pgDomain=https%3a%2f%2fwww.ena.org%2fevents&cappid=6367838356270704617&scriptid=99340&opid=23161874-e8e7-4a9b-bcec-246213507564&opdt=1753300320099&bldv=9474&srcfn=diff&reqid=07e942cc-dfca-4881-ab91-517555534dc7&reqdt=1753305404198&oppid=1&eqs=2e33ac8afa3b5e5f2240c49ea32505bf9d60b60a',
+			safeFrame: Boolean(0)
+		},
+		statisticTracking: {
+			viewcount:'https://use2.smartadserver.com/track/action?siteid=577096&fmtid=119834&pid=1746562&iid=12761439&sid=7004449245&scriptid=99340&opid=23161874-e8e7-4a9b-bcec-246213507564&opdt=1753300320099&bldv=9474&srcfn=diff&reqid=07e942cc-dfca-4881-ab91-517555534dc7&reqdt=1753305404198&oppid=1&key=viewcount&num1=0&num3=&cid=40657817&pgDomain=https%3a%2f%2fwww.ena.org%2fevents&imptype=0&envtype=0'
+		}
+	};
+	sas.utils.cdns['http:'] = 'http://ced-ns.sascdn.com';
+	sas.utils.cdns['https:'] = 'https://ced-ns.sascdn.com';
+	sas.utils.loadScriptCdn('/diff/templates/ts/dist/banner/sas-banner-1.13.js', {
+		async: config.isAsync, onLoad: function() {
+			newObj12761439 = new Banner(config);
+			newObj12761439.init();
+		}
+	});
+})(window.sas);
