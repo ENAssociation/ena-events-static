@@ -1,0 +1,47 @@
+/*_hs_*/;var sas = sas || {};
+if(sas && sas.events && sas.events.fire && typeof sas.events.fire === "function" )
+        sas.events.fire("ad", { tagId: "sas_119834", formatId: 119834 }, "sas_119834");;/*_hs_*/(()=>{"use strict";var t={4084:(t,e)=>{Object.defineProperty(e,"__esModule",{value:!0}),e.LoadManager=void 0;class s{constructor(){this.scripts=new Map,this.callbacks=[]}static getUrls(t){const e=window.sas,s="string"==typeof t?[t]:t,a=e.utils.cdns[location.protocol]||e.utils.cdns["https:"]||"https://ced-ns.sascdn.com";return s.map((t=>a.replace(/\/+$/,"")+"/"+t.replace(/^\/+/,"")))}static loadLink(t){const e=document.createElement("link");e.rel="stylesheet",e.href=t,document.head.appendChild(e)}static loadLinkCdn(t){s.getUrls(t).forEach(s.loadLink)}loadScriptCdn(t,e){const a=s.getUrls(t);for(const t of a){let e=this.scripts.get(t);e||(e={url:t,loaded:!1},this.scripts.set(t,e),this.loadScript(e))}(null==e?void 0:e.onLoad)&&(this.callbacks.push({called:!1,dependencies:a,function:e.onLoad}),this.executeCallbacks())}onScriptLoad(t){t.loaded=!0,this.executeCallbacks()}loadScript(t){const e=document.currentScript,s=document.createElement("script");s.onload=()=>this.onScriptLoad(t),s.src=t.url,e?(e.insertAdjacentElement("afterend",s),window.sas.currentScript=e):document.head.appendChild(s)}executeCallbacks(){this.callbacks.forEach((t=>{!t.called&&t.dependencies.every((t=>{var e;return null===(e=this.scripts.get(t))||void 0===e?void 0:e.loaded}))&&(t.called=!0,t.function())})),this.callbacks=this.callbacks.filter((t=>!t.called))}}e.LoadManager=s}},e={};function s(a){var c=e[a];if(void 0!==c)return c.exports;var l=e[a]={exports:{}};return t[a](l,l.exports,s),l.exports}(()=>{const t=s(4084);window.sas=window.sas||{};const e=window.sas;e.utils=e.utils||{},e.utils.cdns=e.utils.cdns||{},e.utils._callbacks=e.utils._callbacks||{},e.events=e.events||{};const a=e.utils.loadManager||new t.LoadManager;e.utils.loadManager=a,e.utils.loadScriptCdn=a.loadScriptCdn.bind(a),e.utils.loadLinkCdn=t.LoadManager.loadLinkCdn})()})();
+
+(function(sas) {
+	var config = {
+		insertionId: Number(12873673),
+		pageId: '1746562',
+		pgDomain: 'https%3a%2f%2fwww.ena.org',
+		sessionId: new Date().getTime(),
+		baseActionUrl: 'https://use1.smartadserver.com/track/action?siteid=577096&fmtid=119834&pid=1746562&iid=12873673&sid=7823098343&scriptid=99340&opid=9659e082-9876-49c9-8f11-746a445e9c6e&opdt=1756904915589&bldv=10652&srcfn=diff&reqid=88481b59-8d26-4565-be64-d31d1da44005&reqdt=1756905015624&oppid=9659e082-9876-49c9-8f11-746a445e9c6e',
+		formatId: Number(119834),
+		tagId: 'sas_119834',
+		oba: Number(0),
+		isAsync: window.sas_ajax || true,
+		customScript: String(''),
+		filePath: (document.location.protocol == 'https:' ? 'https://ced-ns.sascdn.com' : 'http://ced-ns.sascdn.com') + '/diff/templates/',
+		creativeFeedback: Boolean(1),
+		dsa: String(''),
+		creative: {
+			id: Number(40972745),
+			url: 'https://creatives.sascdn.com/diff/1541/advertiser/536293/InHealth_-1600x150_b0f0bfb3-0c68-496c-bb36-8cafc9d81e61.jpg',
+			type: Number(1),
+			width: Number(('1600' === '100%') ? 0 : '1600'),
+			height: Number(('150' === '100%') ? 0 : '150'),
+			clickUrl: 'https://use1.smartadserver.com/click?imgid=40972745&insid=12873673&pgid=1746562&fmtid=119834&ckid=3710850567686984871&uii=1339761472317241418&acd=1756905015619&tmstp=7823098343&tgt=%24dt%3d1t%3b%24dma%3d803%3b%24dt%3d1t%3b%24dma%3d803%3b%24hc&systgt=%24qc%3d1500084761%3b%24ql%3dUnknown%3b%24qpc%3d90013*%3b%24qpc%3d90*%3b%24qpc%3d900*%3b%24qpc%3d9001*%3b%24qpc%3d90013*%3b%24qpc%3d90013**%3b%24qt%3d152_2199_14041t%3b%24dma%3d803%3b%24qo%3d6%3b%24b%3d17999%3b%24o%3d11100%3b%24sw%3d1920%3b%24sh%3d1080&envtype=0&imptype=0&gdpr=0&pgDomain=https%3a%2f%2fwww.ena.org%2fevents&cappid=3710850567686984871&scriptid=99340&opid=9659e082-9876-49c9-8f11-746a445e9c6e&opdt=1756904915589&bldv=10652&srcfn=diff&reqid=88481b59-8d26-4565-be64-d31d1da44005&reqdt=1756905015624&oppid=9659e082-9876-49c9-8f11-746a445e9c6e&eqs=8b751c20f2e2c137d4996588af9a782307e787ac&go=https%3a%2f%2fkatzextractor.com%2f',
+			clickUrlArray: ["https://use1.smartadserver.com/click?imgid=40972745&insid=12873673&pgid=1746562&fmtid=119834&ckid=3710850567686984871&uii=1339761472317241418&acd=1756905015619&tmstp=7823098343&tgt=%24dt%3d1t%3b%24dma%3d803%3b%24dt%3d1t%3b%24dma%3d803%3b%24hc&systgt=%24qc%3d1500084761%3b%24ql%3dUnknown%3b%24qpc%3d90013*%3b%24qpc%3d90*%3b%24qpc%3d900*%3b%24qpc%3d9001*%3b%24qpc%3d90013*%3b%24qpc%3d90013**%3b%24qt%3d152_2199_14041t%3b%24dma%3d803%3b%24qo%3d6%3b%24b%3d17999%3b%24o%3d11100%3b%24sw%3d1920%3b%24sh%3d1080&envtype=0&imptype=0&gdpr=0&pgDomain=https%3a%2f%2fwww.ena.org%2fevents&cappid=3710850567686984871&scriptid=99340&opid=9659e082-9876-49c9-8f11-746a445e9c6e&opdt=1756904915589&bldv=10652&srcfn=diff&reqid=88481b59-8d26-4565-be64-d31d1da44005&reqdt=1756905015624&oppid=9659e082-9876-49c9-8f11-746a445e9c6e&eqs=8b751c20f2e2c137d4996588af9a782307e787ac&go=https%3a%2f%2fkatzextractor.com%2f"],
+			oryginalClickUrl: 'https://katzextractor.com/',
+			clickTarget: !0 ? '_blank' : '',
+			agencyCode: String(''),
+			creativeCountPixelUrl: 'https://use1.smartadserver.com/h/aip?uii=1339761472317241418&tmstp=7823098343&ckid=3710850567686984871&systgt=%24qc%3d1500084761%3b%24ql%3dUnknown%3b%24qpc%3d90013*%3b%24qpc%3d90*%3b%24qpc%3d900*%3b%24qpc%3d9001*%3b%24qpc%3d90013*%3b%24qpc%3d90013**%3b%24qt%3d152_2199_14041t%3b%24dma%3d803%3b%24qo%3d6%3b%24b%3d17999%3b%24o%3d11100%3b%24sw%3d1920%3b%24sh%3d1080&acd=1756905015619&envtype=0&siteid=577096&tgt=%24dt%3d1t%3b%24dma%3d803%3b%24dt%3d1t%3b%24dma%3d803%3b%24hc&gdpr=0&opid=9659e082-9876-49c9-8f11-746a445e9c6e&opdt=1756904915589&bldv=10652&srcfn=diff&reqid=88481b59-8d26-4565-be64-d31d1da44005&reqdt=1756905015624&oppid=9659e082-9876-49c9-8f11-746a445e9c6e&visit=S&statid=2&imptype=0&intgtype=0&pgDomain=https%3a%2f%2fwww.ena.org%2fevents&cappid=3710850567686984871&capp=0&mcrdbt=1&insid=12873673&imgid=40972745&pgid=1746562&fmtid=119834&isLazy=0&scriptid=99340',
+			creativeClickCountPixelUrl: 40972745 ? 'https://use1.smartadserver.com/h/cp?imgid=40972745&insid=12873673&pgid=1746562&fmtid=119834&ckid=3710850567686984871&uii=1339761472317241418&acd=1756905015619&tmstp=7823098343&tgt=%24dt%3d1t%3b%24dma%3d803%3b%24dt%3d1t%3b%24dma%3d803%3b%24hc&systgt=%24qc%3d1500084761%3b%24ql%3dUnknown%3b%24qpc%3d90013*%3b%24qpc%3d90*%3b%24qpc%3d900*%3b%24qpc%3d9001*%3b%24qpc%3d90013*%3b%24qpc%3d90013**%3b%24qt%3d152_2199_14041t%3b%24dma%3d803%3b%24qo%3d6%3b%24b%3d17999%3b%24o%3d11100%3b%24sw%3d1920%3b%24sh%3d1080&envtype=0&imptype=0&gdpr=0&pgDomain=https%3a%2f%2fwww.ena.org%2fevents&cappid=3710850567686984871&scriptid=99340&opid=9659e082-9876-49c9-8f11-746a445e9c6e&opdt=1756904915589&bldv=10652&srcfn=diff&reqid=88481b59-8d26-4565-be64-d31d1da44005&reqdt=1756905015624&oppid=9659e082-9876-49c9-8f11-746a445e9c6e&eqs=8b751c20f2e2c137d4996588af9a782307e787ac' : 'https://use1.smartadserver.com/h/micp?imgid=0&insid=12873673&pgid=1746562&fmtid=119834&ckid=3710850567686984871&uii=1339761472317241418&acd=1756905015619&tmstp=7823098343&tgt=%24dt%3d1t%3b%24dma%3d803%3b%24dt%3d1t%3b%24dma%3d803%3b%24hc&systgt=%24qc%3d1500084761%3b%24ql%3dUnknown%3b%24qpc%3d90013*%3b%24qpc%3d90*%3b%24qpc%3d900*%3b%24qpc%3d9001*%3b%24qpc%3d90013*%3b%24qpc%3d90013**%3b%24qt%3d152_2199_14041t%3b%24dma%3d803%3b%24qo%3d6%3b%24b%3d17999%3b%24o%3d11100%3b%24sw%3d1920%3b%24sh%3d1080&envtype=0&imptype=0&gdpr=0&pgDomain=https%3a%2f%2fwww.ena.org%2fevents&cappid=3710850567686984871&scriptid=99340&opid=9659e082-9876-49c9-8f11-746a445e9c6e&opdt=1756904915589&bldv=10652&srcfn=diff&reqid=88481b59-8d26-4565-be64-d31d1da44005&reqdt=1756905015624&oppid=9659e082-9876-49c9-8f11-746a445e9c6e&eqs=8b751c20f2e2c137d4996588af9a782307e787ac',
+			safeFrame: Boolean(0)
+		},
+		statisticTracking: {
+			viewcount:'https://use1.smartadserver.com/track/action?siteid=577096&fmtid=119834&pid=1746562&iid=12873673&sid=7823098343&scriptid=99340&opid=9659e082-9876-49c9-8f11-746a445e9c6e&opdt=1756904915589&bldv=10652&srcfn=diff&reqid=88481b59-8d26-4565-be64-d31d1da44005&reqdt=1756905015624&oppid=9659e082-9876-49c9-8f11-746a445e9c6e&key=viewcount&num1=0&num3=&cid=40972745&pgDomain=https%3a%2f%2fwww.ena.org%2fevents&imptype=0&envtype=0'
+		}
+	};
+	sas.utils.cdns['http:'] = 'http://ced-ns.sascdn.com';
+	sas.utils.cdns['https:'] = 'https://ced-ns.sascdn.com';
+	sas.utils.loadScriptCdn('/diff/templates/ts/dist/banner/sas-banner-1.13.js', {
+		async: config.isAsync, onLoad: function() {
+			newObj12873673 = new Banner(config);
+			newObj12873673.init();
+		}
+	});
+})(window.sas);
